@@ -10,7 +10,31 @@ const routes: Routes = [
   {
     path: 'folder/:id',
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+  },  {
+    path: 'aluno',
+    loadChildren: () => import('./aluno/aluno.module').then( m => m.AlunoPageModule)
+  },
+  {
+    path: 'responsavel',
+    loadChildren: () => import('./responsavel/responsavel.module').then( m => m.ResponsavelPageModule)
+  },
+  {
+    path: 'veiculo',
+    loadChildren: () => import('./veiculo/veiculo.module').then( m => m.VeiculoPageModule)
+  },
+  {
+    path: 'condutor',
+    loadChildren: () => import('./condutor/condutor.module').then( m => m.CondutorPageModule)
+  },
+  {
+    path: 'colegio',
+    loadChildren: () => import('./colegio/colegio.module').then( m => m.ColegioPageModule)
+  },
+  {
+    path: 'responsavel',
+    loadChildren: () => import('./responsavel/responsavel.module').then( m => m.ResponsavelPageModule)
   }
+
 ];
 
 @NgModule({
